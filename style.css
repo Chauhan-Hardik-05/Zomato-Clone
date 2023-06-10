@@ -46,6 +46,7 @@
     flex-direction: column;
     height: 50%;
     margin: 3.5rem auto;
+    padding: 0 15px;
     gap: 1.5em;
 }
 
