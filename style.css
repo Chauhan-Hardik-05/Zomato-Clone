@@ -129,4 +129,7 @@
     .link {
         display: none;
     }
+    .Hero_Section_Content .Headline {
+        font-size: 25px;
+    }
 }
