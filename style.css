@@ -1,136 +1,259 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 .container {
-    background-color: wheat;
+  background-color: wheat;
 }
 
 .Hero_Section {
-    background: url("https://b.zmtcdn.com/web_assets/81f3ff974d82520780078ba1cfbd453a1583259680.png") no-repeat center;
-    background-size: cover;
-    /* background-color: gray; */
-    width: 100%;
-    height: 30rem;
-    margin: auto;
+  background: url("https://b.zmtcdn.com/web_assets/81f3ff974d82520780078ba1cfbd453a1583259680.png") no-repeat center;
+  background-size: cover;
+  /* background-color: gray; */
+  width: 100%;
+  height: 33rem;
+  margin: auto;
 }
 
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    width: 75%;
-    margin: auto;
-    padding: 1.5em;
+  display: flex;
+  justify-content: space-between;
+  width: 75%;
+  margin: auto;
+  padding: 1.5em;
 }
 
 .navbar a {
-    color: white;
-    text-decoration: none;
-    font-family: sans-serif;
-    font-size: 17px;
-    font-weight: 100 !important;
+  color: white;
+  text-decoration: none;
+  font-family: sans-serif;
+  font-size: 17px;
+  font-weight: 100 !important;
 }
 
 .link {
-    width: 50%;
-    display: flex;
-    justify-content: space-between;
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
 }
 
 .Hero_Section_Content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    height: 50%;
-    margin: 3.5rem auto;
-    padding: 0 15px;
-    gap: 1.5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 50%;
+  margin: 3.5rem auto;
+  padding: 0 15px;
+  gap: 1.5em;
 }
 
 .Hero_Section_Content .Headline {
-    color: white;
-    font-size: 40px;
-    text-align: center;
-    font-family: sans-serif;
+  color: white;
+  font-size: 40px;
+  text-align: center;
+  font-family: sans-serif;
 }
 
 .Hero_Section_input {
-    background-color: white;
-    width: 50%;
-    padding: 10px;
-    height: 25%;
-    display: flex;
-    flex-direction: row;
-    border-radius: 10px;
-    gap: 3px;
+  background-color: white;
+  width: 50%;
+  padding: 10px;
+  height: 25%;
+  display: flex;
+  flex-direction: row;
+  border-radius: 10px;
+  gap: 3px;
 }
 
 .Hero_Section_input .search {
-    width: 65%;
-    border-left: 1px solid black;
+  width: 65%;
+  border-left: 1px solid black;
 }
 
 .Hero_Section_input .location {
-    width: 35%;
+  width: 35%;
 }
 
 .Hero_Section_input input {
-    background-color: transparent;
-    outline: none;
-    border: none;
-    padding-left: 3em;
-    font-size: medium;
-    font-family: sans-serif;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  padding-left: 3em;
+  font-size: medium;
+  font-family: sans-serif;
 }
 
 @media screen and (max-width: 1200px) {
-    .navbar {
-        width: 90%;
-    }
-    .Hero_Section_Content .Headline {
-        font-size: 30px;
-    }
+  .navbar {
+    width: 90%;
+  }
+
+  .Hero_Section_Content .Headline {
+    font-size: 30px;
+  }
 }
 
 @media screen and (max-width: 1000px) {
-    .link {
-        width: 60%;
-    }
-    .Hero_Section_Content .Headline {
-        font-size: 30px;
-    }
-    .Hero_Section_input {
-        flex-direction: column;
-        height: 50%;
-        gap: 10px;
-        background-color: transparent;
-    }
-    .Hero_Section_input .location {
-        width: 100%;
-        height: 100%;
-        font-size: 15px;
-    }
-    .Hero_Section_input .search {
-        width: 100%;
-        height: 100%;
-        font-size: 15px;
-    }
-    .Hero_Section_input input {
-        border: 1px solid gray;
-        padding: 13px;
-        background-color: white;
-        border-radius: 7px;
-    }
+  .link {
+    width: 60%;
+  }
+
+  .Hero_Section_Content .Headline {
+    font-size: 30px;
+  }
+
+  .Hero_Section_input {
+    flex-direction: column;
+    height: 50%;
+    width: 65%;
+    gap: 10px;
+    background-color: transparent;
+  }
+
+  .Hero_Section_input .location {
+    width: 100%;
+    height: 100%;
+    font-size: 15px;
+  }
+
+  .Hero_Section_input .search {
+    width: 100%;
+    height: 100%;
+    font-size: 15px;
+  }
+
+  .Hero_Section_input input {
+    border: 1px solid gray;
+    padding: 13px;
+    background-color: white;
+    border-radius: 7px;
+  }
 }
 
 @media screen and (max-width: 800px) {
-    .link {
-        display: none;
-    }
-    .Hero_Section_Content .Headline {
-        font-size: 25px;
-    }
+  .link {
+    display: none;
+  }
+
+  .Hero_Section_Content .Headline {
+    font-size: 25px;
+  }
+
+  .Hero_Section_input .location {
+    width: 100%;
+    height: 100%;
+    font-size: 15px;
+  }
+
+  .Hero_Section_input .search {
+    width: 100%;
+    height: 100%;
+    font-size: 15px;
+  }
+
+}
+
+@media screen and (max-width: 500px) {
+  .Hero_Section_input {
+    width: 80%;
+  }
+}
+
+
+/* Section 2 */
+
+.cardContainer {
+  display: flex;
+  background-color: white;
+  height: 100%;
+  width: 100%;
+  padding: 2.5rem 13rem;
+  gap: 1em;
+}
+
+.cardContainer .card {
+  height: 50%;
+  width: 50%;
+  /* border: 1px solid gray; */
+  outline-color: darkgray;
+  outline-style: solid;
+  outline-width: 1px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.cardImg1 {
+  background: url("https://b.zmtcdn.com/webFrontend/e5b8785c257af2a7f354f1addaf37e4e1647364814.jpeg?output-format=webp&fit=around|402:360&crop=402:360;*,*") no-repeat center;
+  background-size: cover;
+  width: 100%;
+  height: 10rem;
+}
+
+.cardImg2 {
+  background: url("https://b.zmtcdn.com/webFrontend/d026b357feb0d63c997549f6398da8cc1647364915.jpeg?output-format=webp&fit=around|402:360&crop=402:360;*,*") no-repeat center;
+  background-size: cover;
+  width: 100%;
+  height: 10rem;
+}
+
+.cardText {
+  margin-left: 2em;
+  padding: 1em 0;
+  font-size: 1.1em;
+}
+
+.cardText h3 {
+  padding-bottom: 0.5em;
+}
+
+.cardText p {
+  color: gray;
+}
+
+
+@media screen and (max-width: 1300px) {
+  .cardContainer {
+    padding: 2.5rem 8rem;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .cardContainer {
+    padding: 2.5rem 6rem;
+  }
+
+  .cardText {
+    margin-left: 1.5em;
+    padding: 1em 0;
+    font-size: 1em;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .cardContainer {
+    padding: 2.5rem 5rem;
+  }
+
+  .cardContainer .card {
+    height: 50%;
+    width: 100%;
+    /* border: 1px solid gray; */
+    outline-color: #DCDCDC;
+    outline-style: solid;
+    outline-width: 1px;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+
+}
+
+@media screen and (max-width: 500px) {
+  .cardContainer {
+    padding: 2.5rem 4rem;
+    flex-direction: column;
+  }
+
 }
