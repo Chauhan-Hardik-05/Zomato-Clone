@@ -257,3 +257,24 @@
   }
 
 }
+
+/* Section 3 */
+
+.CollectonsText {
+  display: flex;
+  justify-content: space-between;
+}
+
+.collections {
+  padding: 2.5rem 13rem;
+}
+
+.collections h2 {
+  font-size: 2.5em;
+}
+
+.collections p {
+  font-size: 1.2em;
+  font-family: sans-serif;
+  font-weight: 200;
+}
